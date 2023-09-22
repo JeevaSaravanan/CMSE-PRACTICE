@@ -4,7 +4,7 @@ import seaborn as sns
 import pandas as pd
 
 st.subheader("Wisconsin Breast Cancer Diagnostic dataset")
-df = pd.read_csv('breast-cancer.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/JeevaSaravanan/CMSE-PRACTICE/main/breast-cancer.csv')
 
 my_dict = {"Columns":["concavity_mean","radius_mean","concave_points_mean","compactness_mean","area_mean","fractal_dimension_mean","concavity_worst", "radius_worst","concave_points_worst","compactness_worst","area_worst","fractal_dimension_worst"],"Description":["Mean concavity of the tumor cells","Mean radius of the tumor cells","Mean number of concave portions of the contour of the tumor cells","Mean compactness of the tumor cells","Mean area of the tumor cells","Mean coastline approximation of the tumor cells","Worst(Most severe) concavity of the tumor cells","Worst(Largest) radius of the tumor cells","Worst(Most Severe) number of concave portions of the contour of the tumor cells","Worst(Most Severe) compactness of the tumor cells","Worst(Largest) area of the tumor cells","Worst(Largest) coastline approximation of the tumor cells"]}
 description_dataset = pd.DataFrame.from_dict(my_dict)
